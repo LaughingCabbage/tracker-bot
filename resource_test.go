@@ -5,7 +5,12 @@ import (
 )
 
 func TestLoadKey(t *testing.T) {
-	testKey := Key{Value: "123434564567ASDFSDFGDFGH"}
-	t.Skip()
+	//value taken directly from .test-tracker-key
+	testKey := Key{Value: "1234123412341234ASDFasdf"}
 
+	key := LoadKey("test/" + ForniteTrackerFileName)
+
+	if key != testKey {
+		t.Fail()
+	}
 }
