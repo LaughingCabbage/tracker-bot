@@ -1,2 +1,4 @@
 *.tracker-key
 *.test
+
+.vscode/
